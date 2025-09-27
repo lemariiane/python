@@ -41,15 +41,35 @@
 #     print(f"{n} X {i} = {n*i}")
 
 
-# conversor de moedas
+# Conversor de moedas
 # r = float(input("Digite o valor em reais(R$): "))
 # d= 5.40
 # print(f"Com R${r:.2f} você consegue comprar U${r/d:.2f}")
 
 # Pintar paredes
-l=float(input("Digite a largura: "));
-at=float(input("Digite a altura: "));
-area=l*at;
+# l=float(input("Digite a largura: "));
+# at=float(input("Digite a altura: "));
+# area=l*at;
 
-print(f"Sua parede tem a dimensão {l:.2f}X{at:.2f} e sua área é de {area:.2f}m²");
-print(f"Para pintar essa parede, você precisará de {area/2}L de tinta");
+# print(f"Sua parede tem a dimensão {l:.2f}X{at:.2f} e sua área é de {area:.2f}m²");
+# print(f"Para pintar essa parede, você precisará de {area/2}L de tinta");
+
+# Desconto para um produto
+# p= float(input("Digite o preço do produto : "));
+# d= (p*5)/100;
+# print (f"O produto com 5% de desconto ficou R${p-d}");
+
+# Aumento de 15% no salário
+# s=float(input("Digite o salário: "));
+# aum=(s*15)/100;
+# print(f"O salário com o aumento de 15% ficou R${s+aum}");
+
+# # Conversor de °C para °F
+# tempc=float(input("Digite a temperatura em °C: "));
+# print(f"O valor {tempc}C°, em Fahrenheit fica {(tempc*1.8)+32}");
+
+# Aluguel de carros
+d=int(input("Quantos dias que o carro ficou alugado? ")); 
+km=float(input("Quantos km percorridos? "));
+a=(km*0.15)+(d*60);
+print(f"O preço para o aluguel, em que cada dia vale R$60 e cada km vale R$0.15, é de R${a}");
