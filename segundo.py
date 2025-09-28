@@ -1,5 +1,5 @@
 # import math; #importando bibliotecas
-# #from math import sqrt; # raiz quadrade 
+from math import sqrt; # raiz quadrade 
 # #python.org
 
 # import emoji
@@ -69,7 +69,24 @@
 # print(f"O valor {tempc}C°, em Fahrenheit fica {(tempc*1.8)+32}");
 
 # Aluguel de carros
-d=int(input("Quantos dias que o carro ficou alugado? ")); 
-km=float(input("Quantos km percorridos? "));
-a=(km*0.15)+(d*60);
-print(f"O preço para o aluguel, em que cada dia vale R$60 e cada km vale R$0.15, é de R${a}");
+# d=int(input("Quantos dias que o carro ficou alugado? ")); 
+# km=float(input("Quantos km percorridos? "));
+# a=(km*0.15)+(d*60);
+# print(f"O preço para o aluguel, em que cada dia vale R$60 e cada km vale R$0.15, é de R${a}");
+
+# Hipotenusa
+# ang1=float(input("Digite o ângulo adjacente: ")); #ang1== ãngulo 1
+# ang2=float(input("Digite o ângulo oposto: "));
+# h=(ang1**2)+(ang2**2);
+# print(f"A hipotenuza desse triângulo é {sqrt(h)}");
+
+# seno cosseno tangente
+ang1=float(input("Digite o ângulo desejado: "));
+ang2=(ang1+90)-180;
+h=sqrt((ang1**2)+(ang2**2));
+print(f"{h}");
+
+print(f"O valor do seno é {ang2/h}");
+print(f"O valor do cosseno é {ang1/h}");
+print(f"O valor da tangente é {ang2/ang1}");
+# sortteio entre 4 pessoas
