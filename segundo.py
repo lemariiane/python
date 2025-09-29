@@ -1,4 +1,4 @@
-# import math; #importando bibliotecas
+import math; #importando bibliotecas
 from math import sqrt; # raiz quadrade 
 # #python.org
 
@@ -82,11 +82,8 @@ from math import sqrt; # raiz quadrade
 
 # seno cosseno tangente
 ang1=float(input("Digite o ângulo desejado: "));
-ang2=(ang1+90)-180;
-h=sqrt((ang1**2)+(ang2**2));
-print(f"{h}");
 
-print(f"O valor do seno é {ang2/h}");
-print(f"O valor do cosseno é {ang1/h}");
-print(f"O valor da tangente é {ang2/ang1}");
+print(f"O valor do seno é {math.sin(ang1)}");
+print(f"O valor do cosseno é {math.cos(ang1)}");
+print(f"O valor da tangente é {math.tang(ang1)}");
 # sortteio entre 4 pessoas
