@@ -95,6 +95,5 @@ nm3=str(input("Digite o terceiro nome: "));
 nm4=str(input("Digite o quarto nome: "));
 
 lista=[nm1,nm2,nm3,nm4];
-escolhido=random.choice(lista);
 
-print (f"O nome escolhido foi {escolhido}");
+print (f"O nome escolhido foi {random.choice(lista)}");
