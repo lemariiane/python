@@ -1,6 +1,7 @@
 import math; #importando bibliotecas
 from math import sqrt; # raiz quadrade 
 # #python.org
+import random #pegar elemento aleatório
 
 # import emoji
 
@@ -81,9 +82,19 @@ from math import sqrt; # raiz quadrade
 # print(f"A hipotenuza desse triângulo é {sqrt(h)}");
 
 # seno cosseno tangente
-ang1=float(input("Digite o ângulo desejado: "));
+# ang1=float(input("Digite o ângulo desejado: ")); #ang1 é de 'ângulo 1'
 
-print(f"O valor do seno é {math.sin(ang1)}");
-print(f"O valor do cosseno é {math.cos(ang1)}");
-print(f"O valor da tangente é {math.tang(ang1)}");
+# print(f"O valor do seno é {math.sin(ang1)}");
+# print(f"O valor do cosseno é {math.cos(ang1)}");
+# print(f"O valor da tangente é {math.tang(ang1)}");
+
 # sortteio entre 4 pessoas
+nm1=str(input("Digite o primeiro nome: ")); #nm é de 'nome' 1
+nm2=str(input("Digite o segundo nome: "));
+nm3=str(input("Digite o terceiro nome: "));
+nm4=str(input("Digite o quarto nome: "));
+
+lista=[nm1,nm2,nm3,nm4];
+escolhido=random.choice(lista);
+
+print (f"O nome escolhido foi {escolhido}");
