@@ -89,11 +89,22 @@ import random #pegar elemento aleatório
 # print(f"O valor da tangente é {math.tang(ang1)}");
 
 # sortteio entre 4 pessoas
+# nm1=str(input("Digite o primeiro nome: ")); #nm é de 'nome' 1
+# nm2=str(input("Digite o segundo nome: "));
+# nm3=str(input("Digite o terceiro nome: "));
+# nm4=str(input("Digite o quarto nome: "));
+
+# lista=[nm1,nm2,nm3,nm4];
+
+# print (f"O nome escolhido foi {random.choice(lista)}");
+
+# sorteio de ordem para apresentação
 nm1=str(input("Digite o primeiro nome: ")); #nm é de 'nome' 1
 nm2=str(input("Digite o segundo nome: "));
 nm3=str(input("Digite o terceiro nome: "));
 nm4=str(input("Digite o quarto nome: "));
 
 lista=[nm1,nm2,nm3,nm4];
+random.shuffle(lista);
 
-print (f"O nome escolhido foi {random.choice(lista)}");
+print (f"A ordem de apresentação será {lista}");
