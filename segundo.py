@@ -99,12 +99,21 @@ import random #pegar elemento aleatório
 # print (f"O nome escolhido foi {random.choice(lista)}");
 
 # sorteio de ordem para apresentação
-nm1=str(input("Digite o primeiro nome: ")); #nm é de 'nome' 1
-nm2=str(input("Digite o segundo nome: "));
-nm3=str(input("Digite o terceiro nome: "));
-nm4=str(input("Digite o quarto nome: "));
+# nm1=str(input("Digite o primeiro nome: ")); #nm é de 'nome' 1
+# nm2=str(input("Digite o segundo nome: "));
+# nm3=str(input("Digite o terceiro nome: "));
+# nm4=str(input("Digite o quarto nome: "));
 
-lista=[nm1,nm2,nm3,nm4];
-random.shuffle(lista);
+# lista=[nm1,nm2,nm3,nm4];
+# random.shuffle(lista);
 
-print (f"A ordem de apresentação será {lista}");
+# print (f"A ordem de apresentação será {lista}");
+
+#analisando nomes
+nm=str(input("Digite o nome completo: ")).strip();#strip para tirar os espaços antes e depois
+
+print("Analisando seu nome");
+print(f"Seu nome em maiúsculo: {nm.upper()}");
+print(f"Seu nome em minúsculo {nm.lower()}");
+print(f"Seu nome tem {len(nm)-nm.count(' ')} letras");#quantidade de letras - os espaços entre eles
+print(f"Seu primeiro nome têm {nm.find(' ')}");
