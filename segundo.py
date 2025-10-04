@@ -110,10 +110,22 @@ import random #pegar elemento aleatório
 # print (f"A ordem de apresentação será {lista}");
 
 #analisando nomes
-nm=str(input("Digite o nome completo: ")).strip();#strip para tirar os espaços antes e depois
+# nm=str(input("Digite o nome completo: ")).strip();#strip para tirar os espaços antes e depois
 
-print("Analisando seu nome");
-print(f"Seu nome em maiúsculo: {nm.upper()}");
-print(f"Seu nome em minúsculo {nm.lower()}");
-print(f"Seu nome tem {len(nm)-nm.count(' ')} letras");#quantidade de letras - os espaços entre eles
-print(f"Seu primeiro nome têm {nm.find(' ')}");
+# print("Analisando seu nome");
+# print(f"Seu nome em maiúsculo: {nm.upper()}");
+# print(f"Seu nome em minúsculo {nm.lower()}");
+# print(f"Seu nome tem {len(nm)-nm.count(' ')} letras");#quantidade de letras - os espaços entre eles
+# print(f"Seu primeiro nome têm {nm.find(' ')}");
+
+#analisando números
+n=int(input("Informe o número para ánalise: "));
+u= n // 1 % 10;
+d= n//10 % 10;
+c= n//100 % 10;
+m= n//1000 % 10;
+
+print(f"A unidade: {u}");
+print(f"A dezena: {d}");
+print(f"A centena: {c}");
+print(f"O milhar: {m}");
