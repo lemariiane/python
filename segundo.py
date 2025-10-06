@@ -119,13 +119,25 @@ import random #pegar elemento aleatório
 # print(f"Seu primeiro nome têm {nm.find(' ')}");
 
 #analisando números
-n=int(input("Informe o número para ánalise: "));
-u= n // 1 % 10;
-d= n//10 % 10;
-c= n//100 % 10;
-m= n//1000 % 10;
+# n=int(input("Informe o número para ánalise: "));
+# u= n // 1 % 10;
+# d= n//10 % 10;
+# c= n//100 % 10;
+# m= n//1000 % 10;
 
-print(f"A unidade: {u}");
-print(f"A dezena: {d}");
-print(f"A centena: {c}");
-print(f"O milhar: {m}");
+# print(f"A unidade: {u}");
+# print(f"A dezena: {d}");
+# print(f"A centena: {c}");
+# print(f"O milhar: {m}");
+
+#A cidade começa com 'Santo'?
+
+# cidade=str(input("Em que cidade você nasceu? ")).strip();
+# print(cidade[:5].upper() == 'SANTO');
+
+#O nome tem o sobrenome 'Silva'?
+
+# nome = str(input("Digite seu nome completo: ")).strip();
+# print(' SILVA' in nome.upper());
+
+#Analisando frase com a letra 'A'
