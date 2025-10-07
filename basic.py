@@ -140,4 +140,15 @@ import random #pegar elemento aleatório
 # nome = str(input("Digite seu nome completo: ")).strip();
 # print(' SILVA' in nome.upper());
 
-#Analisando frase com a letra 'A'
+# #Analisando frase com a letra 'A'
+# frase= str(input("Digite a frase contendo a letra 'a': ")).upper().strip();
+# print(f"A sua frase tem {frase.count("A")} letra's a's.");
+# print(f"A letra 'a' aparece pela primeira vez no índice {frase.find("A")+1}");
+# print(f"A última letra 'a' apareceu na posição {frase.rfind("A")+1}"); # #tem a questão dos espaçoes entre as palavras 
+
+#primeiro e último nome
+# nome=str(input("Digite o nome completo: ")).strip();
+# n = nome.split();
+
+# print(f"Seu primeiro nome é: {n[0]}");
+# print(f"Seu último nome é: {n[-1]}");
