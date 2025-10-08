@@ -42,10 +42,44 @@ from time import sleep;
 #     print("Esse número é par");
 
 #Preço da viagem
-km=float(input("Quantos km são a sua viagem? "));
+# km=float(input("Quantos km são a sua viagem? "));
 
-print(f"Você está prestres a realizar uma viagem de {km}km")
-if km<200:
-    print(f"Sua viagem irá custar R${km*0.5}");
-else:
-    print(f"Sua viagem irá custar R${km*0.45}");
+# print(f"Você está prestres a realizar uma viagem de {km}km")
+# if km<200: #se a viagem for até 200km a taxa é 0.5, se não é 0.45
+#     print(f"Sua viagem irá custar R${km*0.5}");
+# else:
+#     print(f"Sua viagem irá custar R${km*0.45}");
+
+#esse ano é bissexto?
+# from datetime import date;
+
+# ano = int(input("Digite o ano: Coloque 0 para pegar o ano atual. "));
+# if ano==0:
+#     ano=date.today().year;
+# if ano%4==0 and ano%100!=0 or 400==0:#bissexto: de 4 em 4 anos. 
+# #Exeto em casos do número não for divissível por 100- mas quando ele é divissível  por 400,nesse caso, ele volta a ser bissexto. 
+#      print(f"Esse ano de {ano} é bissexto");
+# else:
+#     print(f"O ano de {ano} não é bissexto!");
+
+#Qual número é maior dos três?
+# num1=int(input("Digite o primeiro número: "));
+# num2=int(input("Digite o segundo número: "));
+# num3=int(input("Digite o terceiro número: "));
+
+# maior=max(num1,num2,num3); #função do python
+# menor=min(num1,num2,num3);
+
+# print(f"O maior é {maior} e o menor número é {menor}");
+
+#Aumento de salário
+# salario=float(input("Digite o salário do funcionário: R$"));
+
+# if salario<=1250: #salários abaixo ou iguais a 1250.
+#     aumento= salario*0.15;
+#     print(f"Com o aumento de 15% o novo salário é R${salario+aumento}");
+# else:
+#     aumento= salario*0.1;
+#     print(f"Com o aumento de 10% o novo salário é R${salario+aumento}");
+
+#analisando o triângulo
