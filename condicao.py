@@ -83,3 +83,26 @@ from time import sleep;
 #     print(f"Com o aumento de 10% o novo salário é R${salario+aumento}");
 
 #analisando o triângulo
+# lado1=float(input("Digite o primeiro lado: "));
+# lado2=float(input("Digite o segundo lado: "));
+# lado3=float(input("Digite o terceiro lado: "));
+
+# if lado1+lado2>lado3 and lado1+lado3>lado2 and lado3+lado2>lado1: #soma de quaisquer dos dois lados tem que ser maior que o terceiro
+#     print("Esses lados FORMAM um triângulo!");
+# else:
+#     print("Essas medidas NÃO formam um triângulo!");
+
+#aprovando um empréstimo
+valor_casa=float(input("Qual o valor da casa? R$"));
+salario=float(input("Qual o seu salário? R$"));
+tempo_ano=float(input("Em quantos anos pretende dividir? "));
+
+tempo_mes= tempo_ano*12; #valor mensal
+valor_prestacao=valor_casa/tempo_mes;
+
+print(f"Para pagar essa casa de R${valor_casa} em {tempo_ano} a prestação será de R${valor_prestacao:.2f}")
+
+if valor_prestacao < (salario*0.3): #no mínimo 30% do salário
+    print("PARABÉNS!! Seu empréstimo foi CONCEDIDO!");
+else:
+    print("Infelizmente seu empréstimo NÃO foi concedido!");
