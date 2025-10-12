@@ -23,7 +23,6 @@ from time import sleep;
 #     print(f"Não foi dessa vez!!! O número que eu pensei foi {numsortido}.");
 
 #Multa de velocidade
-
 # km=float(input("Qual a sua velocidade? "));
 
 # if km<80: #80km/hr é o limite de velocidade
@@ -108,20 +107,55 @@ from time import sleep;
 #     print("Infelizmente seu empréstimo NÃO foi concedido!");
 
 #conversor de números
-num=int(input("Digite um número inteiro: "));
+# num=int(input("Digite um número inteiro: "));
 
-print('''Escolha uma das bases para conversão:
-[1] converter para BINÁRIO
-[2] converter para OCTAL
-[3] converter para HEXADECIMAL''');
+# print('''Escolha uma das bases para conversão:
+# [1] converter para BINÁRIO
+# [2] converter para OCTAL
+# [3] converter para HEXADECIMAL''');
 
-opcao=int(input('Sua opção: '));
+# opcao=int(input('Sua opção: '));
 
-if opcao==1:
-    print(f"{num} convertido em BINÁRIO é {bin(num)[2:]}"); #Se não tivesse os [2:], no terminal apareceria: '0o55'
-elif opcao==2:
-    print(f"{num} convertido em OCTAL é {oct(num)}[2:]"); #[2:] é para pular as duas primeiras possições e aparecer só da 2 a diante (só números)
-elif opcao==3:
-    print(f"{num} convertido em HEXADECIMAL é {hex(num)[2:]}");
-else:
-    print("Digite uma opção válida!");
+# if opcao==1:
+#     print(f"{num} convertido em BINÁRIO é {bin(num)[2:]}"); #Se não tivesse os [2:], no terminal apareceria: '0o55'
+# elif opcao==2:
+#     print(f"{num} convertido em OCTAL é {oct(num)}[2:]"); #[2:] é para pular as duas primeiras possições e aparecer só da 2 a diante (só números)
+# elif opcao==3:
+#     print(f"{num} convertido em HEXADECIMAL é {hex(num)[2:]}");
+# else:
+#     print("Digite uma opção válida!");
+
+#Comparador de números
+# print("Qual número é maior?");
+# print("="*25);
+# n1=int(input("Digite o primeiro valor: "));
+# n2=int(input("Digite o segundo valor: "));
+
+# if n1>n2: #se n1 é maior que n2
+#     print("O primeiro valor é maior!");
+# elif n2>n1:
+#     print("O segundo valor é maior!");
+# else:
+#     print("Os valores são iguais");
+
+#ALISTAMENTO MILITAR
+from datetime import date;
+
+print("ALISTAMENTO MILITAR OBRIGATÓRIO!"); #alistamento obrigatório: é no ano em que vc completa 18 anos
+print("="*35);
+ano_nasc=int(input("Digite o ano do seu nascimento: "));# ano de nascimento
+
+ano_atual=date.today().year;
+idade = ano_atual - ano_nasc ;
+
+if idade > 18:
+    print(f"Você tem {idade} anos e já deveria ter se alistado!");
+    print(f"Você deveria ter se alistado a {idade-18} ano(s).");
+    print(f"O ano do seu alistamento foi em {ano_atual-(idade-18)}."); 
+elif idade < 18:
+    print(f"Você tem {idade} anos e ainda não tem idade para se alistar!");
+    print(f"Ainda falta(m) {18-idade} ano(s) para o seu alistamento.");
+    print(f"Você deverá se alistar no ano de {ano_atual+(18-idade)}.");
+else: #idade = 18
+    print("Você deve se alistar IMEDIATAMENTE!");
+
