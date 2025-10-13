@@ -139,23 +139,55 @@ from time import sleep;
 #     print("Os valores são iguais");
 
 #ALISTAMENTO MILITAR
-from datetime import date;
+# from datetime import date;
 
-print("ALISTAMENTO MILITAR OBRIGATÓRIO!"); #alistamento obrigatório: é no ano em que vc completa 18 anos
-print("="*35);
-ano_nasc=int(input("Digite o ano do seu nascimento: "));# ano de nascimento
+# print("ALISTAMENTO MILITAR OBRIGATÓRIO!"); #alistamento obrigatório: é no ano em que vc completa 18 anos
+# print("="*35);
+# ano_nasc=int(input("Digite o ano do seu nascimento: "));# ano de nascimento
 
-ano_atual=date.today().year;
-idade = ano_atual - ano_nasc ;
+# ano_atual=date.today().year;
+# idade = ano_atual - ano_nasc ;
 
-if idade > 18:
-    print(f"Você tem {idade} anos e já deveria ter se alistado!");
-    print(f"Você deveria ter se alistado a {idade-18} ano(s).");
-    print(f"O ano do seu alistamento foi em {ano_atual-(idade-18)}."); 
-elif idade < 18:
-    print(f"Você tem {idade} anos e ainda não tem idade para se alistar!");
-    print(f"Ainda falta(m) {18-idade} ano(s) para o seu alistamento.");
-    print(f"Você deverá se alistar no ano de {ano_atual+(18-idade)}.");
-else: #idade = 18
-    print("Você deve se alistar IMEDIATAMENTE!");
+# if idade > 18:
+#     print(f"Você tem {idade} anos e já deveria ter se alistado!");
+#     print(f"Você deveria ter se alistado a {idade-18} ano(s).");
+#     print(f"O ano do seu alistamento foi em {ano_atual-(idade-18)}."); 
+# elif idade < 18:
+#     print(f"Você tem {idade} anos e ainda não tem idade para se alistar!");
+#     print(f"Ainda falta(m) {18-idade} ano(s) para o seu alistamento.");
+#     print(f"Você deverá se alistar no ano de {ano_atual+(18-idade)}.");
+# else: #idade = 18
+#     print("Você deve se alistar IMEDIATAMENTE!");
 
+#Média de notas
+# n1=float(input("Digite a primeira nota: "));
+# n2=float(input("Digite a segunda nota: "));
+
+# media=(n1+n2)/2;
+
+# print(f"Tirando as notas {n1} e {n2} a média fica {media}");
+
+# if media>=6: #a média é 6 
+#     print("O aluno foi APROVADO!");
+# else:
+#     print("O aluno foi REPROVADO!");
+
+#Classificando atletas
+# from datetime import date;
+# ano_nasc=int(input("Digite o ano de nascimento do atleta: ")); #ano_nasc: ano de nascimento
+
+# ano_atual=date.today().year;
+# idade=ano_atual-ano_nasc;
+
+# if idade<=9:
+#     print(f"Com {idade} ano(s), o atleta é classificado como um atleta mirim!");
+# elif idade<=14:
+#     print(f"Com {idade} anos, o atleta é  classificado como um atleta infantil!");
+# elif idade<=19:
+#     print(f"Com {idade} anos, o atleta é  classificado como um atleta junior!");
+# elif idade<=25:
+#     print(f"Com {idade} anos, o atleta é  classificado como um atleta sênior!");
+# else:
+#     print(f"Com {idade} anos, o atleta é  classificado como um atleta master!");
+
+#Analisando triângulos
