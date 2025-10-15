@@ -87,9 +87,9 @@ from time import sleep;
 # lado3=float(input("Digite o terceiro lado: "));
 
 # if lado1+lado2>lado3 and lado1+lado3>lado2 and lado3+lado2>lado1: #soma de quaisquer dos dois lados tem que ser maior que o terceiro
-#     print("Esses lados FORMAM um triângulo!");
+#      print("Esses lados FORMAM um triângulo!");
 # else:
-#     print("Essas medidas NÃO formam um triângulo!");
+#      print("Essas medidas NÃO formam um triângulo!");
 
 #aprovando um empréstimo
 # valor_casa=float(input("Qual o valor da casa? R$"));
@@ -191,3 +191,19 @@ from time import sleep;
 #     print(f"Com {idade} anos, o atleta é  classificado como um atleta master!");
 
 #Analisando triângulos
+lado1=int(input("Digite o primeiro lado: "));
+lado2=int(input("Digite o segundo lado: "));
+lado3=int(input("Digite o terceiro lado: "));
+
+if lado1+lado2>lado3 and lado1+lado3>lado2 and lado3+lado2>lado1:
+    print("O triângulo foi formado!");
+
+    if lado1==lado2==lado3:
+        print("Esses segmentos formam um triângulo EQUILÁTERO!");
+    elif lado1==lado2 or lado1==lado3 or lado2==lado3:
+        print("Esses segmentos formam um triângulo ISÓSCELES!");
+    elif lado1!=lado2!=lado3:
+        print("Esses segmentos formam um triângulo ESCALENO!");
+
+else:
+    print("Esses segmentos NÃO formam um triângulo!")
