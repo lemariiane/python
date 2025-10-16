@@ -191,19 +191,61 @@ from time import sleep;
 #     print(f"Com {idade} anos, o atleta é  classificado como um atleta master!");
 
 #Analisando triângulos
-lado1=int(input("Digite o primeiro lado: "));
-lado2=int(input("Digite o segundo lado: "));
-lado3=int(input("Digite o terceiro lado: "));
+# lado1=int(input("Digite o primeiro lado: "));
+# lado2=int(input("Digite o segundo lado: "));
+# lado3=int(input("Digite o terceiro lado: "));
 
-if lado1+lado2>lado3 and lado1+lado3>lado2 and lado3+lado2>lado1:
-    print("O triângulo foi formado!");
+# if lado1+lado2>lado3 and lado1+lado3>lado2 and lado3+lado2>lado1:
+#     print("O triângulo foi formado!");
 
-    if lado1==lado2==lado3:
-        print("Esses segmentos formam um triângulo EQUILÁTERO!");
-    elif lado1==lado2 or lado1==lado3 or lado2==lado3:
-        print("Esses segmentos formam um triângulo ISÓSCELES!");
-    elif lado1!=lado2!=lado3:
-        print("Esses segmentos formam um triângulo ESCALENO!");
+#     if lado1==lado2==lado3:
+#         print("Esses segmentos formam um triângulo EQUILÁTERO!");
+#     elif lado1!=lado2!=lado3:
+#         print("Esses segmentos formam um triângulo ESCALENO!");
+#     else:
+#         print("Esses segmentos formam um triângulo ISÓSCELES!");
 
+# else:
+#     print("Esses segmentos NÃO formam um triângulo!");
+
+#IMC
+# altura=float(input("Digite a altura (m): "));
+# peso=float(input("Digite o peso (kg): "));
+
+# imc=peso/(altura**2);
+
+# if imc<18.5:
+#     print(f"Seu IMC é {imc:.2f} e você está ABAIXO do peso ideal.");
+# elif imc<25:
+#     print(f"Seu IMC é {imc:.2f} e você está no peso ideal.");
+# elif imc<30:
+#     print(f"Seu IMC é {imc:.2f} e você está  com sobrepeso.");
+# elif imc<40:
+#     print(f"Seu IMC é {imc:.2f} e você está com obesidade.");
+# else:
+#     print(f"Seu IMC é {imc:.2f} e você está com obesidade mórbida.");
+
+#Gerenciador de pagamento
+preco=float(input("Digite o preço da compra (R$): "));
+
+print('''CONDIÇÕES DE PAGAMENTO
+    [1] à vista dinheiro/cheque/pix
+    [2] à vista cartão
+    [3] 2X no cartão
+    [4] 3X ou mais no cartão''');
+
+opcao=int(input("Qual opção? "));
+
+if opcao==1:
+    print(f"Sua compra irá custar R${preco-(preco*0.1):.2f} no final! Com 10% de desconto."); #10% de desconto
+elif opcao==2:
+    print(f"Sua compra irá custar R${preco-(preco*0.05):.2f} no final! Com 5% de desconto."); #5% de desconto
+elif opcao==3:
+    print(f"Sua compra foi parcelada em 2X de {preco/2:.2f}.");
+    print(f"Sua compra irá custar R${preco} no final!"); #preco normal
+elif opcao==4:
+    parcela=int(input("Quantas parcelas? "));
+    print(f"Sua compra foi parcelada em {parcela}X de R${(preco+(preco*0.2))/parcela:.2f} com juros!");
+    print(f"Sua compra irá custar R${preco+(preco*0.2):.2f} no final."); #20% de juros
 else:
-    print("Esses segmentos NÃO formam um triângulo!")
+    print("OPÇÃO INVÁLIDA de pagamento! Tente novamente!");
