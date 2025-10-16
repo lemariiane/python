@@ -19,6 +19,7 @@ else:
     sleep(0.6)
     print("PO")
     sleep(1)
+    
     computador=random.choice([1,2,3]);#computador escolhe uma opção aleatória
 
     print("_"*30);
