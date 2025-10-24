@@ -1,16 +1,15 @@
+
 print("-"*30);
 print("Qual o maias leve e o mais pesado?");
 print("-"*30);
 
-maior=0;
-menor=0;
-
-for i in range(1,3):
+lista=[];
+for i in range(1,7):
     peso=float(input(f"Peso da pessoa {i}°: "));
     i+=1;
-    if peso>maior:
-        maior=peso;
-    else:
-        menor=peso;
+    lista+=[peso];
 
-print(f"{maior} e {menor}");
+maior=max(lista);
+menor=min(lista);
+
+print(f"O MAIOR peso é {maior}kg e o MENOR peso é {menor}kg!");
