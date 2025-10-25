@@ -1,20 +1,16 @@
-nomes=[];
 idades=[];
-sexos=[];
 mais_velho=0;
 nome_homem=' ';
 f_menor=0;
 
 for i in range(1,5):
     print(f'-------{i}° PESSOA-------');
-
+    
     nome=str(input('Digitte o nome: '));
-    nomes.append(nome);
     idade=int(input('Digite a idade: '));
     idades.append(idade);
-    print('''[1] Feminino\n[2] Masculino\n[3] Outros\n[4] Prefiro não informar ''');
+    print('''[1] Feminino \n[2] Masculino \n[3] Outros \n[4] Prefiro não informar''');
     sexo=int(input('Qual o sexo? '));
-    sexos.append(sexo);
 
     if sexo==1 and idade<20:
         f_menor+=1;
