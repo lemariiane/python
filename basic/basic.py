@@ -1,15 +1,10 @@
 import math; #importando bibliotecas
-from math import sqrt; # raiz quadrade 
-# #python.org
+from math import sqrt; # raiz quadrada
+#python.org
 import random #pegar elemento aleatório
 
-# import emoji
-
-# # Usando a função emojize para adicionar um emoji
-# print(emoji.emojize("Python é :snake: e eu amo :pizza:!"))
-
 # raiz quadrada
-# num = math.sqrt(49);
+num = math.sqrt(49);
 
 # soma
 # print (num);
