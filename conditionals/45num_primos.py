@@ -1,5 +1,7 @@
-num=int(input('Digite o número: '));
-divi=0;
+#Descobrindo se o número é primo ou não
+
+num=int(input('Digite o número: ')); #num de número
+divi=0; #divi de dividendo
 
 for i in range(1,num+1):
     print(i, end=" - ");    

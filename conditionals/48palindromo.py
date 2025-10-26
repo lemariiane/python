@@ -1,3 +1,5 @@
+#Essa frase continua a mesma ao contrário? é um palindromo?
+
 frase=str(input("Digite a frase: ")).strip().upper().split();#NÃO COLOCAR ACENTO
 
 invertida=''.join(frase);

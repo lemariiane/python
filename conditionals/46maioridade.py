@@ -1,3 +1,4 @@
+#Quantas pessoas temos maiores e menores de idade?
 from datetime import date;
 print("-"*50);
 print("Quantas pessoas são maiores de idade? ")

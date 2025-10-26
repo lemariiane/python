@@ -1,3 +1,5 @@
+#Progressão aritmética
+
 print("="*25);
 print("10 TERMOS DE UMA PA");
 print("="*25);

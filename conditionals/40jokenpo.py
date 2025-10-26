@@ -1,5 +1,6 @@
 import random;
 from time import sleep;
+
 print("JOGO DE PEDRA, PAPEL E TESOURA")
 print("-"*30);
 print('''Escolha uma jogada: 
@@ -27,7 +28,7 @@ else:
     print(f"O computador jogou {opcoes[computador]}");
     print("¨"*30);
 
-    if jogador==computador:
+    if jogador==computador: #se os dois jogarem a mesma opção da empate
         print("EMPATE!!!");
     elif jogador==1 and computador==3 or jogador==2 and computador==1 or jogador==3 and computador==2: #pedra(1) ganha da tesoura(3) / papel(2) ganha da pedra(1)/ tesoura(3) ganha papel(2)/ 
         print("PARABÉNS, VOCÊ GANHOU!!!");
