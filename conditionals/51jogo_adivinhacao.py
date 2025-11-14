@@ -12,6 +12,7 @@ numsortiado=randint(0,10);#computador pensando em um número
 while not acertou:
     qntpalpite+=1;
     palpite=int(input("Qual o seu palpite? "));
+    
     if numsortiado==palpite:
         acertou=True;
     else:
