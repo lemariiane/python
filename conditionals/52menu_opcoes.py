@@ -1,13 +1,33 @@
-num1=int(print('Primeiro valor: '))
-num2=int(print('Segundo valor: '))
+num1=int(input('Primeiro valor: '))
+num2=int(input('Segundo valor: '))
 
-print('[1] Somar' \
-'[2] Multiplicar' \
-'[3] Maior' \
-'[4] Novos núemros' \
-'[5] Sair do programa')
+opcao=0
 
-opcao=int(print('Qual é a sua opção'))
+while opcao!=5:
+    print('''[1] Somar
+[2] Multiplicar 
+[3] Maior
+[4] Novos números 
+[5] Sair do programa''')
 
-if opcao==1:
-    print(f'A soma entre {num1} + {num2} = {num1+num2}')
+    opcao=int(input('Qual é a sua opção? '))
+
+    if opcao==1:
+        print(f'{num1} + {num2} = {num1+num2}')
+    elif opcao==2:
+        print(f'{num1} X {num2} = {num1*num2}')
+    elif opcao==3:
+        if num1>num2:
+            print(f'O maior número é {num1}')
+        else:
+            print(f'O maior número é o {num2}')
+    elif opcao==4:
+        print('INFORME OS NOVOS NÚMEROS')
+        num1=int(input('Primeiro valor: '))
+        num2=int(input('Segundo valor: '))
+    elif opcao==5:
+        print('Finalizando...')
+    else:
+        print('Digite uma opção válida!')
+
+print('Você saiu do programa!')
