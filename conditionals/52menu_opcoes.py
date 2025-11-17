@@ -1,3 +1,4 @@
+from time import sleep
 num1=int(input('Primeiro valor: '))
 num2=int(input('Segundo valor: '))
 
@@ -29,5 +30,6 @@ while opcao!=5:
         print('Finalizando...')
     else:
         print('Digite uma opção válida!')
+    sleep(1.5)#demorar 1.5s para mostrar o menu novamente
 
 print('Você saiu do programa!')
