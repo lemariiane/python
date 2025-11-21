@@ -1,10 +1,16 @@
 print('SEQUÊNCIA DE FIBONACCI')
+qnt=int(input('Deseja ver quantos termos? '))
+print('-'*30)
 
-num=int(input('NUM: '))
+t1=0 
+t2=1
+i=2
 
+print(t1, t2, end=' ')
 
-num=num+((num-1)+(num-2))
-while num <3:
-        num= num+(num-1)
-        print(num)
-print(num)
+while i<qnt:
+    t3=t1+t2
+    t1=t2
+    t2=t3
+    print(t3, end=' ')
+    i+=1
