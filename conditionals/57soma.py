@@ -1,3 +1,4 @@
+#somar os números com uma flag de parada sem o break
 soma=qnt=num=0
 
 num=int(input('Digite o número [999 para parar]: '))
