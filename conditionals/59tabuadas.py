@@ -1,9 +1,12 @@
-fator=int(input('Digite o número da tabuada: ')) 
-cont=0
-while fator<0:
-   
-    for cont in range(0,10):
-        print(f'{fator}X{cont}={fator*cont}')
-        cont+=1    
+#Usuário digita qual número da tabuada quer e o programa para quando ele digita um valor negativo
+multiplicador=0
+while True:
+    num=int(input('Qual tabuada você gostaria de ver? '))
+    if num<0:
+        break
+    else:
+        for multiplicador in range(11):
+            print(f'{num} X {multiplicador} = {num*multiplicador} ')
+    print('-' * 30)
 
-fator=int(input('Digite o número da tabuada: '))
+print('Fim do programa!')
