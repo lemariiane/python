@@ -14,9 +14,9 @@ while True:
         if palpite in ('P','I'):
             break
         palpite=str(input('Digite um valor válido: [P/I] ')).strip().upper()
-    num=int(input('Aposte seu número: '))
 
-    numcomp=randint(0,10) #'computador' irá apostar um número de 0 a 10
+    num=int(input('Aposte seu número: '))
+    numcomp=randint(0,10) #'computador' irá apostar um número de 0 a 10, através do random
 
     print('CONTANDO...')
     sleep(2)
@@ -39,7 +39,7 @@ while True:
 print('Você PERDEU!')
 print('='*25)
 if cont_ganhou==0:
-    print('GAME OVER!!!! Você conseguiu ganhar NENHUMA rodada!')
+    print('GAME OVER!!!! Você não ganhou NENHUMA rodada!')
 elif cont_ganhou==1:
     print('GAME OVER! Você venceu só UMA rodada')
 else:
