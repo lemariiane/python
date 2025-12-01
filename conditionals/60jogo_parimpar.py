@@ -38,4 +38,9 @@ while True:
 
 print('Você PERDEU!')
 print('='*25)
-print(f'GAME OVER! Você venceu {cont_ganhou} vez(es)')
+if cont_ganhou==0:
+    print('GAME OVER!!!! Você conseguiu ganhar NENHUMA rodada!')
+elif cont_ganhou==1:
+    print('GAME OVER! Você venceu só UMA rodada')
+else:
+    print(f'GAME OVER! Você venceu {cont_ganhou} vezes')
