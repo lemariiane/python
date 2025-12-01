@@ -1,5 +1,4 @@
 #Usuário digita qual número da tabuada quer e o programa para quando ele digita um valor negativo
-multiplicador=0
 while True:
     num=int(input('Qual tabuada você gostaria de ver? '))
     if num<0:
