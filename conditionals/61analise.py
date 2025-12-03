@@ -1,14 +1,22 @@
 maior_de_idade=qnt_homem=mulher_menor=0
+
 print('-'*30)
 print('CADASTRE UMA PESSOA')
-continua='x'
+
 while True:
     print('-'*30)
+
     idade=int(input('Idade: '))
     print('''[1] Feminino \n[2] Masculino \n[3] Outros \n[4] Prefiro não informar''')
-    sexo=int(input('Qual o sexo? '))
+    sexo=str(input('Qual o sexo? '))
+
+    while True:
+        if sexo in ('1','2','3','4'):
+            break
+        sexo=str(input('DADO INVÁLIDO! Qual o sexo: '))
+
     print('-'*30)
-    continua=str(input('Deseja continuar? [S/N]')).strip().upper()
+    continua=str(input('Deseja continuar? [S/N] ')).strip().upper()
 
     while True:
         if continua in ('S','N'):
@@ -17,9 +25,9 @@ while True:
 
     if idade>18:
         maior_de_idade+=1
-    if sexo==2:
+    if sexo=='2':
         qnt_homem+=1
-    if sexo==1 and idade<20:
+    if sexo=='1' and idade<20:
         mulher_menor+=1
 
     if continua=='N':
