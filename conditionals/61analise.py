@@ -23,7 +23,7 @@ while True:
             break
         continua=str(input('DADO INVÁLIDO! Digite um valor válido: [S/N] ')).strip().upper()
 
-    if idade>18:
+    if idade>=18:
         maior_de_idade+=1
     if sexo=='2':
         qnt_homem+=1
