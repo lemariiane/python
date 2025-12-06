@@ -13,10 +13,10 @@ restante = valor_saque
 for cedula in cedulas:
     if restante >= cedula:# Verifica se o valor restante é maior ou igual à cédula atual
         quantidade = restante // cedula
-        restante = restante % cedula #atualiza o valor do restantate a cada loop
+        restante = restante % cedula # Atualiza o valor do restantate a cada loop
         contagem_cedulas[cedula] = quantidade 
 
-        if quantidade > 0: #só aparece aquelas que o usuário irá receber
+        if quantidade > 0: # Só aparece aquelas que o usuário irá receber
             print(f'R${cedula:2d}: {quantidade} cédula(s)')
             
 if restante > 0:
