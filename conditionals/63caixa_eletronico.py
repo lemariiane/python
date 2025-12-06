@@ -2,25 +2,31 @@ print('-'*30)
 print('CAIXA ELETRÔNICO')
 print('-'*30)
 total=sobrou=0
-celula_um=int(1)
-celula_dez=int(10)
-celula_vinte=int(20)
-celula_cinquenta=int(50)
+cedula_um=0
+cedula_dez=0
+cedula_vinte=0
+cedula_cinquenta=0
+
 valor=int(input('Qual o valor que deseja sacar: R$'))
 
 if valor>50:
-    celula_cinquenta=int(valor/50)
-    sobrou=valor-(celula_cinquenta*50)
+    cedula_cinquenta=valor//50 #calcula a qauntidade de cédulas
+    restante=valor-(cedula_cinquenta*50) #calcula o retante para verficar se há necessidade de ter outra cédula
+if restante>=20:
+    cedula_vinte=(restante//20)
+    restante-=(cedula_vinte*20)
+if restante>=10:
+    cedula_dez=(restante//10)
+    restante-=(cedula_dez*10)
+if restante>=1:
+    cedula_um=(restante//1)
 
-if sobrou%50<=20:
-    celula_vinte=int(sobrou/20)
-    sobrou=valor-((celula_vinte*20)+(celula_cinquenta*50))
-
-if sobrou%20<=10:
-    celula_dez=int(sobrou/10)
-    sobrou=valor-((celula_dez*10)+(celula_vinte*20)+(celula_cinquenta*50))
-
-if sobrou%10>=1:
-    celula_um=int(sobrou/1)
-
-print(f'{celula_cinquenta}. {celula_vinte}. {celula_dez}. {celula_um}')
+#só monstra para o usuário se ele receber ao menos 1 cedula do valor
+if cedula_cinquenta>1:
+    print(f'Total de {cedula_cinquenta} de R$50')
+if cedula_vinte>1:
+    print(f'Total de {cedula_vinte} de R$20')
+if cedula_dez>1:
+    print(f'Total de {cedula_dez} de R$10')
+if cedula_um>1:
+    print(f'Total de {cedula_um} de R$1')
