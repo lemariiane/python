@@ -1,3 +1,4 @@
+#Quantas cédulas de cada valor seram entreges para o usuário?
 print('-'*30)
 print('CAIXA ELETRÔNICO')
 print('-'*30)
@@ -11,7 +12,7 @@ valor=int(input('Qual o valor que deseja sacar: R$'))
 
 if valor>50:
     cedula_cinquenta=valor//50 #calcula a qauntidade de cédulas
-    restante=valor-(cedula_cinquenta*50) #calcula o retante para verficar se há necessidade de ter outra cédula
+    restante=valor-(cedula_cinquenta*50) #calcula o retante para verficar se há necessidade de ter outras cédulas
 if restante>=20:
     cedula_vinte=(restante//20)
     restante-=(cedula_vinte*20)
