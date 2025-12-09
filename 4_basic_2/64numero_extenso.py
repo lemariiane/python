@@ -4,9 +4,7 @@ numero_extenso=('zero','um','dois','três','quatro','cinco', 'seis', 'sete',
 
 numero=int(input('Digite um número entre o e 20: '))
 
-while True:
-    if 0 <= numero <=20:
-        break
+while not 0<= numero <=20:
     numero=int(input('Valor inválido! Digite um número de 0 a 20: '))
 
 print(f'Você digitou o número {numero_extenso[numero]}')
