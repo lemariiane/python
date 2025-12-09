@@ -4,7 +4,7 @@ print('CAIXA ELETRÔNICO')
 print('-'*30)
 
 cedulas=[50,20,10,1]
-contagem_cedulas={}
+contagem_cedulas={}#dicionário
 
 valor_sacado=int(input('Digite o valor que deseja saca: [somente valor inteiro] '))
 resto=valor_sacado
