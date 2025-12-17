@@ -1,9 +1,7 @@
 posicoes=(0,1,2,3,4)
-pos_maior=[]
-pos_menor=[]
-lista=[]
-print('-'*40)
+pos_maior=pos_menor=lista=[]
 
+print('-'*40)
 for posicao in posicoes:
     num=int(input(f'Digite um valor para a posição {posicao}: '))
     if posicao==0:
@@ -19,7 +17,6 @@ for posicao in posicoes:
     elif menor>=num:
         menor=num
         pos_menor.append(posicao)
-        
 
 print('-'*40)
 print(f'Você digitou os números {lista}')
