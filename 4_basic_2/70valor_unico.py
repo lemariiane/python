@@ -13,10 +13,9 @@ while True:
 
     while continua not in ('S','N'):
         continua=str(input('Valor INVÁLIDO! Digite [S/N]: ')).strip().upper()
-        if continua in ('S','N'):
-            break
+
     if continua in 'N':
         break
 
 print('-'*30)
-print(lista)
+print(sorted(lista))
