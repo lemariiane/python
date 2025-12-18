@@ -1,3 +1,4 @@
+#lista com valores únicos
 lista=[]
 
 while True:
@@ -6,7 +7,7 @@ while True:
         print('Valor adicionado com sucesso...')
         lista.append(num)
     else:
-        print('Não vou adicionar...')
+        print('Valor REPETIDO! Não vou adicionar...')
 
     continua=str(input('Quer continuar? [S/N]')).strip().upper()
 
