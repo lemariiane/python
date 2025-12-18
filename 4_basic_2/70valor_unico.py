@@ -2,12 +2,17 @@
 lista=[]
 
 while True:
-    num=int(input('Digite um valor: '))
-    if num not in lista:
-        print('Valor adicionado com sucesso...')
-        lista.append(num)
-    else:
-        print('Valor REPETIDO! Não vou adicionar...')
+    try:
+        num=int(input('Digite um valor: '))
+        if num not in lista:
+            print('Valor adicionado com sucesso...')
+            lista.append(num)
+        else:
+            print('Valor REPETIDO! Não vou adicionar...')
+            
+    except ValueError:
+        print('Erro: Por favor, digite apenas números inteiros.')
+        continue
 
     continua=str(input('Quer continuar? [S/N]')).strip().upper()
 
