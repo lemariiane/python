@@ -1,1 +1,2 @@
-print('lista duplaaa')
+print('lista dupla')
+print('EXERCCÍCIO 71')
