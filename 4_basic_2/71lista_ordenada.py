@@ -10,4 +10,4 @@ for i in range (0,5):
             print('O valor foi adicionado na posição 0')
             lista.insert(0,num)
 
-print('Volte sempre!')
+print('Volte sempre!!')
