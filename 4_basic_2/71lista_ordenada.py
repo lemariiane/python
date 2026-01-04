@@ -1,3 +1,4 @@
+#Ordenando valores de uma lista sem o 'sorted'
 lista=[]
 
 for i in range (0,5):
