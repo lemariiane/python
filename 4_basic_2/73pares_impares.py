@@ -1,7 +1,5 @@
 #separando valores pares e ímpares em listas 
-lista=list()
-par= list()
-impar=list()
+lista, par, impar= [], [], []
 while True:
     num=int(input('Digite um número: '))
     lista.append(num)
@@ -15,6 +13,6 @@ while True:
     if cont=='N':
         break
 
-print(f'Os números são: {lista}')
-print(f'Os números pares são: {par}')
-print(f'Os números ímpares são: {impar}')
+print(f'Os números são: {sorted(lista)}')
+print(f'Os números pares são: {sorted(par)}')
+print(f'Os números ímpares são: {sorted(impar)}')
