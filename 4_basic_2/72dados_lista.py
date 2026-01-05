@@ -12,17 +12,10 @@ while True:
     if cont=='N':
         break
 
-for numeros in lista:
-    if numeros==5:
-        contem=True
-        break
-    else:
-        contem=False
-
 print(f'A lista formada contém {len(lista)} elementos')
 lista.sort(reverse=True)
 print(lista)
-if contem==True:
+if 5 in lista:
     print('A lista contém o número 5')
 else:
     print('A lista não contém o número 5')
