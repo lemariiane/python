@@ -39,6 +39,6 @@ while True:
     if cont=='N':
         break
 
-print(f'Você cadastrou {len(pessoas)} pessoa(s)!')
+print(f'Você cadastrou {i} pessoa(s)!')
 print(f'O maior peso foi de {maior_peso}KG. Peso de {nome_maior}')
 print(f'O menor peso foi de {menor_peso}KG. Peso de {nome_menor}')
