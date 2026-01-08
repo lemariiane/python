@@ -1,0 +1,48 @@
+nome_pessoa=[]
+pessoas=[]
+nome_maior=[]
+nome_menor=[]
+pessoas.append(nome_pessoa[:])
+pessoas.clear()
+maior_peso=0
+menor_peso=0
+i=0
+nome_maior=[]
+nome_menor= []
+while True:
+    nome=str(input('Digite o nome: '))
+    nome_pessoa.append(nome)
+
+    peso=float(input('Digite o peso: '))
+    nome_pessoa.append(peso)
+    
+    pessoas.append(nome_pessoa[:])
+    nome_pessoa.clear()
+
+    cont=str(input('Deseja adiconar outra pessoa? [S/N]')).strip().upper()
+    while cont not in ('S','N'):
+        cont=str(input('DADO INVÁLIDO! Digite apenas "S" OU "N": ')).strip().upper()
+
+    if i==0:
+        maior_peso=pessoas[0][1]
+        menor_peso=pessoas[0][1]
+    
+    if peso > maior_peso:
+        maior_peso = peso
+        nome_maior = [nome] 
+    elif peso == maior_peso:
+        nome_maior.append(nome) 
+
+    if peso < menor_peso:
+        menor_peso = peso
+        nome_menor = [nome] 
+    elif peso == menor_peso:
+        nome_menor.append(nome)
+    i+=1
+
+    if cont=='N':
+        break
+
+print(f'Você cadastrou {len(pessoas)} pessoa(s)!')
+print(f'O maior peso foi de {maior_peso}KG. Peso de {nome_maior}')
+print(f'O menor peso foi de {menor_peso}KG. Peso de {nome_menor}')
