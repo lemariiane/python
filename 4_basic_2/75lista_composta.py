@@ -4,7 +4,6 @@ nome_maior=[]
 nome_menor=[]
 maior_peso=0
 menor_peso=0
-i=0
 while True:
     nome=str(input('Digite o nome: '))
     nome_pessoa.append(nome)
@@ -19,7 +18,7 @@ while True:
     while cont not in ('S','N'):
         cont=str(input('DADO INVÁLIDO! Digite apenas "S" OU "N": ')).strip().upper()
 
-    if i==0:
+    if len(pessoas)==0:
         maior_peso=peso
         menor_peso=peso
     
@@ -34,11 +33,10 @@ while True:
         nome_menor = [nome] 
     elif peso == menor_peso:
         nome_menor.append(nome)
-    i+=1
 
     if cont=='N':
         break
 
-print(f'Você cadastrou {i} pessoa(s)!')
+print(f'Você cadastrou {len(pessoas)} pessoa(s)!')
 print(f'O maior peso foi de {maior_peso}KG. Peso de {nome_maior}')
 print(f'O menor peso foi de {menor_peso}KG. Peso de {nome_menor}')
