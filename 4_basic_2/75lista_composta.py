@@ -2,8 +2,8 @@ nome_pessoa=[]
 pessoas=[]
 nome_maior=[]
 nome_menor=[]
-maior_peso=0
-menor_peso=0
+maior_peso=menor_peso=0
+
 while True:
     nome=str(input('Digite o nome: '))
     nome_pessoa.append(nome)
