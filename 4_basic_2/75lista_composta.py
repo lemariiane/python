@@ -18,7 +18,7 @@ while True:
     while cont not in ('S','N'):
         cont=str(input('DADO INVÁLIDO! Digite apenas "S" OU "N": ')).strip().upper()
 
-    if len(pessoas)==0:
+    if len(pessoas)==1:
         maior_peso=peso
         menor_peso=peso
     
