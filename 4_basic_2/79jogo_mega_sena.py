@@ -9,4 +9,4 @@ print(f'----SORTEANDO {qnt} JOGOS----')
 
 for i in range(1,qnt+1):
     sorteio = random.sample(range(1, 61), 6)#sorteando 6 números de 1 a 60 sem repetição
-    print(f'JOGO {i}: {sorted(sorteio)})')
+    print(f'JOGO {i}: {sorted(sorteio)}')
