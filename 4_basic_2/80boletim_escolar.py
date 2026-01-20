@@ -38,4 +38,4 @@ while stop != 999:
         if stop == boletim[i][0]:
             print(f'Notas de {boletim[i][1]} são {boletim[i][2]} e {boletim[i][3]}')
 
-print('Volte sempre!!')
+print('Volte sempre!!!')
