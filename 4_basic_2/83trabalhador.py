@@ -11,7 +11,7 @@ dicionario['idade']=ano_atual-dicionario['ano_nasc']
 if dicionario['num_carteira']!=0:
     dicionario['ano_contratacao']=int(input('Ano de contratação: '))
     dicionario['salario']=float(input('Salário: '))
-    dicionario['aposentadoria']=dicionario['idade']+50
+    dicionario['aposentadoria']=dicionario['idade']+(dicionario['ano_contratacao']+35)-ano_atual
 
 print('=-'*25)
 for k,v in dicionario.items():#k= key / v=value
