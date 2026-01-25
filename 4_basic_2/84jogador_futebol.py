@@ -16,3 +16,7 @@ print('=-'*30)
 
 for k,v in dicionario.items():
     print(f'O {k} é igual: {v}')
+
+print('=-'*30)
+
+print(f'O jogador {dicionario['nome']} jogou {jogos} partidas.')
