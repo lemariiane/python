@@ -13,5 +13,6 @@ if dicionario['num_carteira']!=0:
     dicionario['salario']=float(input('Salário: '))
     dicionario['aposentadoria']=dicionario['idade']+50
 
+print('=-'*25)
 for k,v in dicionario.items():#k= key / v=value
-    print(f'{k} - {v} ')
+    print(f'O {k} é igual: {v} ')
