@@ -1,15 +1,12 @@
 dicionario={}
 gols=[]
-partida_gol={}
 dicionario['nome']=str(input('Nome jogador: '))
 jogos=int(input(f'Quantas  partidas {dicionario['nome']} jogou? '))
 
 for partidas in range(1,jogos+1):
     gol=int(input(f'Quantos gols na partida {partidas}: '))
     gols.append(gol)
-    partida_gol['partida']=jogos
 
-partida_gol['gol']=gols
 dicionario['gols']=gols
 dicionario['total_gol']=sum(gols)
 
@@ -22,5 +19,5 @@ for k,v in dicionario.items():
 
 print('=-'*30)
 
-for i,v in enumerate(partida_gol):
-    print(f'{i} e {v}')
+for i,v in enumerate(dicionario['gols']):
+    print(f'Na partida {i} o {dicionario['nome']} fez {v} gols!')
