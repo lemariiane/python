@@ -1,5 +1,6 @@
 dicionario={}
 gols=[]
+
 dicionario['nome']=str(input('Nome jogador: '))
 jogos=int(input(f'Quantas  partidas {dicionario['nome']} jogou? '))
 
