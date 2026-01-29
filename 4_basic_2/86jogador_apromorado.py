@@ -35,4 +35,16 @@ print('=-'*30)
 
 while True:
     dado=int(input('Mostrar dados de qual jogador? (999 para interromper) '))
-    print(f'LEVANTAMENTO DO JOGADOR {jogadores[dado]['nome']}')
+    if dado==999:
+        break
+
+    elif dado>=len(jogadores):
+        print('ERRO! Não existe um jogador com esse código.')
+    
+    else:
+        print(f'LEVANTAMENTO DO JOGADOR {jogadores[dado]['nome']}')
+        for jogos,g in enumerate(jogadores[dado]['gols']):
+            print(f'No jogo {jogos+1} fez {g} gol(s)')
+
+print('PROGRAMA ENCERRADO!')
+    
