@@ -1,6 +1,10 @@
 #Calculando uma área
+def area(l,c):
+    a=l*c
+    print(f'A área do terreno é {a}m2.')
+
 print('Controle de Terrenos')
 print('-'*15)
 larg=float(input('Largura (m): '))
 comp=float(input('Comprimento (m): '))
-print(f'A área do terreno é {larg*comp:.2f}m2.')
+area(larg,comp)
