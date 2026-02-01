@@ -1,4 +1,4 @@
-#Calculando uma área
+#Calculando uma área com def
 def area(l,c):
     a=l*c
     print(f'A área do terreno é {a}m2.')
