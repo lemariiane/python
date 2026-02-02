@@ -4,7 +4,14 @@
 
 from time import sleep
 def contar(inicial,fim,razao):
+    if razao<0:
+        razao*=-1
+    if razao==0:
+        print('ERRO! Razão não pode ser 0.')
+        
+    print(f'Contagem de {inicial} até {fim} de {razao} em {razao}')
     print('-='*20)
+
     if inicial>fim:
         fim-=1
     else:
