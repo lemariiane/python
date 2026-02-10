@@ -13,5 +13,4 @@ if not gols.isnumeric():
 else:
     gols=int(gols)
 
-
 print(jogador(nome,gols))
