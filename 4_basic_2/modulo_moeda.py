@@ -28,8 +28,17 @@ def resumo(preco=0, taxaaum=10, taxared=5):
     print(f'{taxaaum}% de aumento: \t{aumento(preco,taxaaum,True)}')
     print(f'{taxared}% de redução: \t{reducao(preco,taxared,True)}')
 
-
-
 #formatação do valor 
 def moeda(preco = 0, moeda='R$'):
     return f'{moeda}{preco:.2f}'.replace('.',',')
+
+#Função LeiaDinheiro (exerxício 100)
+def leiaDinheiro(msg):
+    valido=False
+    while not valido:
+        entrada = str(input(msg)).replace(',','.').strip()
+        if entrada.isalpha() or entrada=='':
+            print(f'ERRO! "{entrada}" é um preco inválido!')
+        else:
+            valido==True
+
